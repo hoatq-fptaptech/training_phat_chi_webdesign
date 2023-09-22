@@ -1,0 +1,34 @@
+img{
+    max-width: 100%;/* width sẽ không vượt quá kích thước của hộp chứa nó */
+}
+div{
+    width: calc(33.33% - 70px); /* auto */
+    float:left;/* left right */
+    /* border:1px solid gray; */
+    margin: 15px;/* tạo khoảng cách giữa các khối */
+    /*
+    margin-top:
+    margin-right:
+    margin-bottom:
+    margin-left:
+    */
+    padding:20px;/* giãn lề - khoảng cách từ border và content */
+    /*
+    padding-top:
+    padding-right:
+    padding-bottom:
+    padding-left:
+    */
+    border-radius: 6px;
+    box-shadow: 0 0 5px gray;
+    transition: all 300ms;/* duration: 300ms */
+}
+div:hover{
+    background-color: bisque;
+    /* transform: rotate(45deg); */
+    transform: scale(1.2);
+}
+.special{
+    /* transform: translate(100px,50px); */
+    /* transform: rotate(45deg); */
+}

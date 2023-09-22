@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+body{
+    background-color:bisque;
+}
+h1{
+    color:red;
+}
+p{
+    color: #008000; /* mã hex */
+    font-size: 16px ;/* pixel */
+    font-weight: 400;/* 100(thin) 200(extra-thin) 300(light) 400(normal) 500(medium) 600(semi-bold) 700(bold) 800(extra-bold) 900(black) */
+    text-align: justify;/* left right center justify */
+    line-height: 1.5;
+    text-decoration: none;/* underline  line-through overline none*/
+    text-transform: none;/* uppercase lowercase capitalize*/
+    font-family: 'Lato';
+
+    width: 700px;
+    /* height: 300px;  nên để auto */
+    /* border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray; */
+    border: 1px solid gray;
+}
+.special{
+    color: #0000ff;
+}
