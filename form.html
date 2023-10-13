@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Form</title>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+    <header class="section">
+        <div class="container">
+            <h1>Header</h1>
+        </div>
+    </header>
+    <main class="section">
+        <div class="container">
+            <form action="#" method="get">
+                <!-- input select textarea button -->
+                <label>Full name</label>
+                <input type="text" name="i1" placeholder="Full name" />
+                <br/>
+                <label>Email</label>
+                <input type="email" name="i2" placeholder="Email" />
+                <br/>
+                <label>Password</label>
+                <input type="password" name="pwd" placeholder="Password" />
+                <br/>
+                <label>Age</label>
+                <input type="number" name="i4" placeholder="Age" />
+                <br/>
+                <label>DOB</label>
+                <input type="date" name="i5" placeholder="DOB" />
+                <br/>
+                <label>Week</label>
+                <input type="week" name="i5" placeholder="DOB" />
+                <br/>
+                <label>Month</label>
+                <input type="month" name="abc" placeholder="DOB" />
+                <br/>
+                <label>Telephone</label>
+                <input type="tel" name="i6" placeholder="Telephone" />
+                <br/>
+                <label>My color</label>
+                <input type="color" name="i5" placeholder="DOB" />
+                <br/>
+                <label>Gender</label><!-- comment -->
+                <label><input type="radio" value="male" name="gender" placeholder="Gender" />Male</label>
+                <label><input type="radio" value="female" name="gender" placeholder="Gender" />Female</label>
+                <br/>
+                <label>Confirm</label>
+                <label><input type="checkbox" value="yes" name="cf" />yes</label>
+                <label><input type="checkbox" value="no" name="cf"  />no</label>
+                <br/>
+                <label>Country</label>
+                <select name="country">
+                    <option value="vn">VN</option>
+                    <option value="aus">Aus</option>
+                    <option value="us">US</option>
+                    <option value="uk">UK</option>
+                </select>
+                <br/>
+                <label>Description</label>
+                <textarea name="desc"></textarea>
+                <br/>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button">Button</button> <!-- thao tac voi javascript-->
+            </form>
+        </div>
+    </main>
+    <section class="section">
+        <div class="container">
+            
+        </div>
+    </section>
+    <footer class="section">
+        <div class="container">
+            <h2>Footer</h2>
+        </div>
+    </footer>
+</body>
+</html>

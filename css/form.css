@@ -1,0 +1,11 @@
+input[type=email]{
+    background-color: red;
+}
+input[name=pwd]{
+    color:blue
+}
+input[name=i1]{
+    width: 150px;
+    height: 35px;
+    border: 1px solid red;
+}

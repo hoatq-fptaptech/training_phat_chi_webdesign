@@ -1,0 +1,23 @@
+*{ /* all of web */
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;/* padding ko vượt quá width */
+}
+body{
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #222222;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    float:left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+}
