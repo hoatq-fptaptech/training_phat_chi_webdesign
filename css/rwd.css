@@ -1,0 +1,29 @@
+/* media query */
+@media screen and (min-width:1400px) {
+    .container{
+        width: 1360px;
+    }
+    .box{
+        width: calc(25% - 30px);
+    }
+}
+@media screen and (max-width: 991px) and (min-width:769px) {
+   /* style viết ở đây chỉ hiển thị tác dụng với
+   màn hình nhỏ hơn 992px */ 
+   /* tablet */
+    .container{
+        width: 750px;
+    }
+    .box{
+        width: calc(50% - 30px);
+    }
+}
+@media screen and (max-width: 768px)  {
+   /* mobile */
+   .container{
+        width: 100%;
+    }
+    .box{
+        width: calc(100% - 30px);
+    }
+}
