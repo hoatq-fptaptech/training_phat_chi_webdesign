@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css"/>
+
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 id="city">Hà Nội, Việt Nam</h1>
+            <h2><span id="temp">20</span><sup>o</sup>C</h2>
+            <h3>Độ ẩm: <span id="hump">70</span>%</h3>
+            <h3>Gió: <span id="wind">10</span>km/h</h3>
+            <img id="icon" src="https://openweathermap.org/img/wn/10d@2x.png"/>
+        </div>
+    </section>
+    <script type="text/javascript">
+        // call api (là 1 link chứa dữ liệu dạng text có định dạng format như giá trị trong js)
+        // step 1: call data from api url
+        var url = `https://api.openweathermap.org/data/2.5/weather?q=brisbane&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
+        fetch(url) // call url 
+            .then(data=>data.json()) // convert to json data (1 dạng dữ liệu dùng được)
+            .then(function(data){
+                console.log(data);
+                 // step 2: use data to html
+                var city = document.getElementById("city");
+                city.innerText = data.name;
+                var temp = document.getElementById("temp");
+                temp.innerText = data.main.temp;
+                var hump = document.getElementById("hump");
+                hump.innerText = data.main.humidity;
+                var wind = document.getElementById("wind");
+                wind.innerText = data.wind.speed;
+                var icon = document.getElementById("icon");
+                icon.src = "https://openweathermap.org/img/wn/"+ data.weather[0].icon +"@2x.png";
+
+                var d = new Date();
+                // position: absolute ; top: -10px;right:10px
+           }) 
+    </script>
+</body>
+</html>

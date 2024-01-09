@@ -1,0 +1,54 @@
+{
+    "products": [
+        {
+            "name":"Iphone 15 Pro max 256Gb",
+            "price": 1499,
+            "qty":15,
+            "image":"images/demo.jpeg"
+        },
+        {
+            "name":"Iphone 14 Pro max 512Gb",
+            "price": 1299,
+            "qty":10,
+            "image":"images/demo.jpeg"
+        },
+        {
+            "name":"Samsung Galaxy Note 20",
+            "price": 1099,
+            "qty":11,
+            "image":"images/demo.jpeg"
+        },
+        {
+            "name":"Iphone 15 Pro max 256Gb",
+            "price": 1499,
+            "qty":15,
+            "image":"images/demo.jpeg"
+        },
+        {
+            "name":"Iphone 14 Pro max 512Gb",
+            "price": 1299,
+            "qty":10,
+            "image":"images/demo.jpeg"
+        },
+        {
+            "name":"Samsung Galaxy Note 20",
+            "price": 1099,
+            "qty":11,
+            "image":"images/demo.jpeg"
+        },
+        {
+            "name":"Iphone 15 Pro max 256Gb",
+            "price": 1499,
+            "qty":15,
+            "image":"images/demo.jpeg"
+        },
+        {
+            "name":"Iphone 14 Pro max 512Gb",
+            "price": 1299,
+            "qty":10,
+            "image":"images/demo.jpeg"
+        }
+    ],
+    "total": 45,
+    "limit":8
+}

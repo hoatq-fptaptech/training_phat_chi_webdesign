@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App JS 2</title>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/app_js2.css"/>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div id="box" onmouseenter="demo()" onmouseleave="demo2()">
+                <div id="box-content"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <input type="text" id="f" placeholder="Text here.."
+                onkeydown="text()"
+                onkeyup="text3(this)"
+            />
+            <input type="text" id="f1" placeholder="Text here.."
+                onkeyup="text3(this)"
+            />
+            <input type="text" id="f2" placeholder="Text here.."
+                onkeyup="text3(this)"
+            />
+            <input type="text" id="f3" placeholder="Text here.."
+                onkeyup="text3(this)"
+            />
+            <button type="button">Start</button>
+            <h2><span id="number">00</span></h2>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function text(){
+        }
+  //   keydown   (value of input updated) keyup
+        function text2(){
+            //alert("Up...");
+            var fip = document.getElementById("f");
+            // value -> input 
+            var v = fip.value;
+            // alert(v);
+            var nb = document.getElementById("number");
+            nb.innerText = v;
+        }
+        function text3(e){
+            // var f1 = document.getElementById('f1');
+            var v = e.value;
+            var nb = document.getElementById("number");
+            nb.innerText = v;
+        }
+
+         // click Start -> count down   
+        function demo(){
+            var bc = document.getElementById("box-content");
+            bc.style.display = "block";
+        }
+
+        function demo2(){
+            var bc = document.getElementById("box-content");
+            bc.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
